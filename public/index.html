@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f8ff">
+  <meta name="description" content="SahabatDengar AI membantu komunikasi dua arah melalui suara dan teks.">
+  <title>SahabatDengar AI — Komunikasi Tanpa Batas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#beranda" aria-label="SahabatDengar AI beranda">
+        <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 21h5l4-10 6 19 5-14 3 5h5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong>SahabatDengar</strong><small>AI COMMUNICATION</small></span>
+      </a>
+      <div class="nav-label">MENU UTAMA</div>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#beranda" class="nav-link active" data-page="beranda"><span class="nav-icon">⌂</span> Beranda</a>
+        <a href="#percakapan" class="nav-link" data-page="percakapan"><span class="nav-icon">▤</span> Percakapan <span class="nav-pill">Live</span></a>
+        <a href="#suara-teks" class="nav-link" data-page="suara-teks"><span class="nav-icon">◖</span> Suara ke Teks</a>
+        <a href="#teks-suara" class="nav-link" data-page="teks-suara"><span class="nav-icon">◉</span> Teks ke Suara</a>
+        <a href="#kamera" class="nav-link" data-page="kamera"><span class="nav-icon">▣</span> Kamera Isyarat</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <div class="help-icon">✦</div>
+          <strong>Komunikasi lebih mudah</strong>
+          <p>Gunakan alat bantu sesuai kebutuhanmu.</p>
+          <a href="#tentang" class="text-link">Pelajari fitur <span>↗</span></a>
+        </div>
+        <div class="profile">
+          <div class="avatar">SD</div>
+          <div class="profile-copy"><strong>Pengguna</strong><small>Mode aksesibilitas</small></div>
+          <button class="icon-button small" id="contrastToggle" title="Ubah kontras" aria-label="Ubah kontras">◐</button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="icon-button menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="pageName">Beranda</strong></div>
+        <div class="topbar-right">
+          <span class="status-dot"></span><span class="online-label">Layanan siap digunakan</span>
+          <button class="icon-button" id="fontToggle" title="Perbesar teks" aria-label="Perbesar teks">Aa</button>
+          <div class="top-avatar">SD</div>
+        </div>
+      </header>
+
+      <section class="page active-page" id="beranda">
+        <div class="welcome-row">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span> RUANG KOMUNIKASI INKLUSIF</div>
+            <h1>Komunikasi tanpa<br class="desktop-break"> <span>batas.</span></h1>
+            <p class="hero-copy">Setiap percakapan punya arti. Hubungkan suara dan teks dalam satu ruang yang mudah digunakan siapa saja.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#percakapan"><span>✦</span> Mulai percakapan <span class="btn-arrow">→</span></a>
+              <a class="btn btn-secondary" href="#tentang">Kenali fitur</a>
+            </div>
+            <div class="trust-line"><span class="trust-avatars"><i>✓</i><i>↔</i><i>♡</i></span><span>Dirancang untuk komunikasi yang lebih inklusif</span></div>
+          </div>
+          <div class="hero-visual" aria-label="Ilustrasi komunikasi suara dan teks">
+            <div class="visual-glow"></div>
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="visual-card voice-card"><div class="visual-card-top"><span class="mini-icon blue">〽</span><span class="mini-label">SUARA</span><span class="live-dot"></span></div><div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="visual-caption">Ucapan jadi teks</span></div>
+            <div class="bridge-icon">↔</div>
+            <div class="visual-card text-card"><div class="visual-card-top"><span class="mini-icon mint">Aa</span><span class="mini-label">TEKS</span><span class="check-badge">✓</span></div><div class="text-lines"><i></i><i></i><i></i></div><span class="visual-caption">Teks jadi suara</span></div>
+            <div class="floating-chip chip-one">✦ <span>Lebih terhubung</span></div><div class="floating-chip chip-two">● <span>Real-time*</span></div>
+          </div>
+        </div>
+
+        <div class="section-heading"><div><span class="section-kicker">MULAI DARI SINI</span><h2>Alat komunikasi</h2></div><span class="section-note">Pilih sesuai kebutuhanmu</span></div>
+        <div class="feature-grid">
+          <a class="feature-card" href="#suara-teks"><div class="feature-icon icon-blue">〽</div><div class="feature-meta"><span>FITUR 01</span><span class="arrow-round">↗</span></div><h3>Suara ke Teks</h3><p>Ubah ucapan lawan bicara menjadi teks yang mudah dibaca.</p><div class="feature-bottom"><span class="feature-status"><i></i> Browser kompatibel</span><span class="card-arrow">→</span></div></a>
+          <a class="feature-card" href="#teks-suara"><div class="feature-icon icon-green">Aa</div><div class="feature-meta"><span>FITUR 02</span><span class="arrow-round">↗</span></div><h3>Teks ke Suara</h3><p>Ketik pesan dan biarkan perangkat membacakannya.</p><div class="feature-bottom"><span class="feature-status"><i></i> Siap digunakan</span><span class="card-arrow">→</span></div></a>
+          <a class="feature-card" href="#kamera"><div class="feature-icon icon-violet">▣</div><div class="feature-meta"><span>FITUR 03</span><span class="arrow-round">↗</span></div><h3>Kamera Isyarat</h3><p>Buka kamera untuk menampilkan gerakan tangan sebagai bantuan visual.</p><div class="feature-bottom"><span class="feature-status muted"><i></i> Pratinjau kamera</span><span class="card-arrow">→</span></div></a>
+        </div>
+
+        <div class="bottom-grid" id="tentang">
+          <div class="mission-card"><div class="mission-mark">♡</div><div><span class="section-kicker">MISI KAMI</span><h3>Memahami lebih dari sekadar kata.</h3><p>SahabatDengar AI adalah konsep aplikasi komunikasi dua arah yang membantu menjembatani pengguna tunarungu dan masyarakat umum melalui suara dan teks.</p></div><div class="mission-decoration">↗</div></div>
+          <div class="quick-card"><div class="quick-top"><div><span class="section-kicker">AKSES CEPAT</span><h3>Mulai sekarang</h3></div><span class="quick-spark">✦</span></div><a href="#percakapan"><span class="quick-icon">▤</span><span><strong>Ruang percakapan</strong><small>Kirim dan baca pesan</small></span><b>→</b></a><a href="#suara-teks"><span class="quick-icon">〽</span><span><strong>Transkripsi suara</strong><small>Gunakan mikrofon</small></span><b>→</b></a></div>
+        </div>
+        <p class="disclaimer">*Fitur suara bergantung pada dukungan browser dan izin perangkat. Penerjemahan bahasa isyarat otomatis membutuhkan model AI khusus dan belum tersedia di versi demo ini.</p>
+      </section>
+
+      <section class="page" id="percakapan">
+        <div class="page-intro"><div class="eyebrow"><span class="eyebrow-dot"></span> RUANG INTERAKTIF</div><h1>Ruang <span>percakapan.</span></h1><p>Tempat bertukar pesan dengan cara yang nyaman. Pesan disimpan pada server lokal aplikasi ini.</p></div>
+        <div class="conversation-layout">
+          <div class="chat-panel">
+            <div class="chat-header"><div class="contact-avatar">↔</div><div class="contact-copy"><strong>Ruang komunikasi</strong><small><i></i> Siap untuk percakapan</small></div><button class="btn btn-quiet" id="clearChat">Bersihkan</button></div>
+            <div class="chat-messages" id="chatMessages" aria-live="polite"><div class="chat-empty" id="chatEmpty"><div class="empty-icon">↔</div><strong>Mulai percakapanmu</strong><p>Ketik pesan di bawah untuk memulai. Kamu juga bisa membacakan pesan dengan suara.</p></div></div>
+            <form class="chat-compose" id="chatForm"><label class="sr-only" for="chatInput">Tulis pesan</label><textarea id="chatInput" rows="1" maxlength="2000" placeholder="Tulis pesan yang ingin disampaikan..." required></textarea><div class="compose-bottom"><span id="charCount">0 / 2000</span><div><button class="icon-button" type="button" id="speakLast" title="Bacakan pesan terakhir" aria-label="Bacakan pesan terakhir">◖</button><button class="btn btn-primary send-button" type="submit">Kirim <span>↑</span></button></div></div></form>
+          </div>
+          <aside class="conversation-side"><div class="side-info-card"><div class="side-info-icon">✦</div><h3>Komunikasi dua arah</h3><p>Gunakan teks untuk menyampaikan pesan, lalu aktifkan suara untuk membantu lawan bicara mendengarnya.</p><div class="side-stat"><span>Riwayat pesan</span><strong id="messageCount">0</strong></div></div><div class="tip-card"><strong>Tips aksesibilitas</strong><p>Gunakan kalimat yang jelas dan pendek. Pastikan volume perangkat cukup saat membacakan pesan.</p></div></aside>
+        </div>
+      </section>
+
+      <section class="page" id="suara-teks">
+        <div class="page-intro"><div class="eyebrow"><span class="eyebrow-dot"></span> SPEECH RECOGNITION</div><h1>Suara menjadi <span>teks.</span></h1><p>Aktifkan mikrofon untuk menangkap ucapan dan menampilkan hasilnya sebagai teks.</p></div>
+        <div class="tool-layout">
+          <div class="tool-main panel"><div class="panel-heading"><div><span class="section-kicker">TRANSKRIPSI LANGSUNG</span><h2>Dengarkan percakapan</h2></div><span class="pill pill-blue" id="speechStatus">Belum aktif</span></div><div class="mic-stage"><div class="mic-rings"><div class="mic-core">♩</div></div><p id="micHint">Tekan tombol untuk mulai mendengarkan.</p><button class="btn btn-primary btn-large" id="startSpeech"><span>◖</span> Mulai mikrofon</button><p class="permission-note">Browser akan meminta izin mikrofon saat pertama kali digunakan.</p></div><div class="transcript-box"><div class="transcript-head"><strong>Hasil transkripsi</strong><button class="text-button" id="clearTranscript">Hapus teks</button></div><div id="transcriptText" class="transcript-text" aria-live="polite">Hasil ucapan akan muncul di sini...</div><div class="transcript-actions"><button class="btn btn-secondary" id="copyTranscript">Salin teks</button><button class="btn btn-primary" id="sendTranscript">Kirim ke percakapan →</button></div></div></div>
+          <aside class="tool-aside"><div class="how-card"><span class="section-kicker">CARA PAKAI</span><h3>Hanya tiga langkah</h3><ol><li><b>01</b><span><strong>Izinkan mikrofon</strong><small>Setujui izin dari browser.</small></span></li><li><b>02</b><span><strong>Mulai mendengarkan</strong><small>Bicaralah dengan jelas.</small></span></li><li><b>03</b><span><strong>Baca hasilnya</strong><small>Salin atau kirim ke chat.</small></span></li></ol></div><div class="notice-card"><span>ⓘ</span><p>Fitur ini menggunakan Web Speech API. Dukungan terbaik biasanya tersedia di Chrome atau Edge; hasil pengenalan dapat berbeda sesuai perangkat, bahasa, dan koneksi.</p></div></aside>
+        </div>
+      </section>
+
+      <section class="page" id="teks-suara">
+        <div class="page-intro"><div class="eyebrow"><span class="eyebrow-dot"></span> TEXT TO SPEECH</div><h1>Teks menjadi <span>suara.</span></h1><p>Tulis pesan, pilih suara yang tersedia, lalu bacakan melalui perangkatmu.</p></div>
+        <div class="tool-layout">
+          <div class="tool-main panel"><div class="panel-heading"><div><span class="section-kicker">SPEECH SYNTHESIS</span><h2>Pesan yang ingin diucapkan</h2></div><span class="pill pill-green">Siap digunakan</span></div><label class="field-label" for="ttsInput">Tulis pesan</label><textarea class="large-textarea" id="ttsInput" maxlength="2000" placeholder="Contoh: Halo, apa kabar? Senang bisa berbicara denganmu."></textarea><div class="field-row"><div class="field-group"><label class="field-label" for="voiceSelect">Pilihan suara</label><select id="voiceSelect"><option value="">Suara default perangkat</option></select></div><div class="field-group speed-field"><label class="field-label" for="speechRate">Kecepatan <strong id="rateValue">1×</strong></label><input type="range" min="0.7" max="1.3" value="1" step="0.1" id="speechRate"></div></div><div class="tts-actions"><button class="btn btn-primary btn-large" id="speakText"><span>◖</span> Bacakan teks</button><button class="btn btn-secondary btn-large" id="stopSpeech">■ Berhenti</button><button class="btn btn-secondary btn-large" id="sendTts">Kirim ke chat →</button></div><p class="inline-status" id="ttsStatus" aria-live="polite">Siap membacakan teks.</p></div>
+          <aside class="tool-aside"><div class="how-card"><span class="section-kicker">TIPS</span><h3>Pesan yang mudah dipahami</h3><ul class="simple-tips"><li>Gunakan kalimat singkat.</li><li>Periksa kembali teks sebelum dibacakan.</li><li>Atur volume perangkat sesuai kebutuhan.</li></ul></div><div class="notice-card"><span>ⓘ</span><p>Suara dibuat oleh mesin pembaca bawaan browser/perangkat. Suara yang tersedia dapat berbeda-beda.</p></div></aside>
+        </div>
+      </section>
+
+      <section class="page" id="kamera">
+        <div class="page-intro"><div class="eyebrow"><span class="eyebrow-dot"></span> COMPUTER VISION</div><h1>Kamera <span>isyarat.</span></h1><p>Gunakan kamera sebagai pratinjau visual saat berkomunikasi secara langsung.</p></div>
+        <div class="camera-layout">
+          <div class="camera-panel panel"><div class="panel-heading"><div><span class="section-kicker">LIVE CAMERA</span><h2>Pratinjau kamera</h2></div><span class="pill pill-blue" id="cameraStatus">Kamera mati</span></div><div class="camera-view" id="cameraView"><div class="camera-placeholder"><div class="camera-symbol">▣</div><strong>Kamera belum diaktifkan</strong><p>Tekan tombol di bawah untuk memberikan izin kamera.</p></div><video id="cameraVideo" autoplay playsinline muted hidden></video><div class="camera-overlay"><span>SAHABATDENGAR AI</span><span id="cameraClock">● LIVE PREVIEW</span></div></div><div class="camera-controls"><button class="btn btn-primary btn-large" id="startCamera">Aktifkan kamera</button><button class="btn btn-secondary btn-large" id="stopCamera" disabled>Matikan kamera</button></div></div>
+          <aside class="tool-aside"><div class="how-card"><span class="section-kicker">PENTING DIKETAHUI</span><h3>Pratinjau, bukan penerjemah otomatis</h3><p class="aside-copy">Pada versi ini kamera hanya menampilkan video langsung. Sistem belum mengenali atau menerjemahkan gerakan bahasa isyarat secara otomatis.</p><div class="feature-check"><span>✓</span> Akses kamera dari browser</div><div class="feature-check"><span>✓</span> Tampilan responsif</div><div class="feature-check disabled"><span>○</span> Model AI bahasa isyarat belum terpasang</div></div><div class="notice-card"><span>ⓘ</span><p>Kamera hanya aktif setelah kamu memberikan izin. Video tidak dikirim ke server oleh aplikasi demo ini.</p></div></aside>
+        </div>
+      </section>
+
+      <footer class="footer"><span>© 2026 SahabatDengar AI</span><span>Menembus batas hening dengan teknologi yang inklusif.</span><a href="#beranda">Kembali ke atas ↑</a></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

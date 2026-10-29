@@ -1,0 +1,8 @@
+{
+  "name": "sahabatdengar-ai",
+  "version": "1.0.0",
+  "description": "Website komunikasi dua arah aksesibel untuk SahabatDengar AI",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=18" }
+}
